@@ -1,0 +1,21 @@
+.primary-color {
+    background-color: #ede6e3;
+}
+
+.secondary-color {
+    background-color: #F06449;
+}
+
+.tertiary-color {
+    background-color: #dadad9
+}
+
+.jumbotron {
+    border: 4px solid #F06449;
+    border-radius: 5px;
+}
+
+.search-title {
+    border-bottom: 4px solid #F06449;
+    border-radius: 4px;
+}

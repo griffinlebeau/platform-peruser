@@ -4,71 +4,100 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Platform-Peruser</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-  </head>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" href="styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
 
   <body>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">Platform-Peruser</h1>
-        <p class="subtitle">
-          Search streaming services for your favorite movies!
-        </p>
+    <section class="section primary-color">
+      <div class="container secondary-color jumbotron columns">
+        <div class="column is-half">
+            <h1 class="title">Platform-Peruser</h1>
+            <p class="subtitle">
+              Search streaming services for your favorite movies!
+            </p>
+        </div>
+        <div class="column is-half">
+            <p class="tertiary-color" id="question">question</p>
+            <p id="answer-one">answer</p>
+            <p id="answer-two">answer</p>
+            <p id="answer-three">answer</p>
+            <p id="answer-four">amswer</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <div class="tile is-ancestor">
       <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box">
-          <p class="title">Search Movies</p>
+          <p class="title search-title">Search Movies</p>
           <form>
-            <input type="text" />
+              <!-- search input -->
+            <input id="search-input" class="input is-small is-rounded" type="text" />
           </form>
-          <button class="button">Search</button>
-          <button class="button">Platforms</button>
-          <button class="button">Reviewers</button>
+          <button id="search-bttn" class="button is-medium is-warning">Search</button>
         </div>
       </div>
-      <div class="tile is-parent">
+      
+      <div class="tile is-8 is-parent">
+        <div class="tile is-child card">
+            <!--movie title-->
+          <p class="title search-title" id="movie-title">Movie Title</p>
+        <div class="card-image">
+            <!--movie cover-->
+            <figure class="image is-64x64">
+                <!--send cover image-->
+                <image id="movie-cover" src=""></image>
+            </figure>
+        </div>
+        <div class="card-content">
+            <!--all textual content related to movie search-->
+            <p id="movie-plot">plot</p>
+            <p id="movie-release">release date</p>
+            <p id="movie-genre">type</p>
+            <p id="movie-review">review</p>
+        </div>
+        <div class="card-footer">
+            <!--streaming platform icons-->
+            <div class="card-footer-item">
+                <figure class="image is-24x24">
+                    <image id="streaming-one"></image>
+                </figure> 
+            </div>
+            <div class="card-footer-item">
+                <figure class="image is-24x24">
+                    <image id="streaming-two"></image>
+                </figure>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    <div class="tile is-parent">
         <div class="tile is-4 is-vertical">
           <div class="tile is-child box">
             <p class="title">Watchlist</p>
+            <div>
+                <figure class="image is-16x16">
+                    <image id="watchlist-cover"></image>
+                </figure>
+                <p id="watchlist-title">
+                    movie title
+                </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="tile is-8 is-parent">
-        <div class="tile is-child box">
-          <p class="title">Movie Title</p>
-        </div>
-      </div>
     </div>
   </body>
 
-  <footer></footer>
+  <footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Platform-Peruser</strong> created by Griffin Lebeau, Nick Wilmas and Ward Egan
+        </p>
+    </div>
+</footer>
 </html>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Platform Peruser</title>
-</head>
-<body>
-  <header>
-    <div>
-      <h2></h2>
-      <nav></nav>
-    </div>
-  </header>
-  <main>
-    <div id="main-card">
-      <div>movie art</div>
-      <p>movie title</p>
-      <div>platform icons</div>
-      <div>NYT review</div>
-    </div>
-  </main>
-
-  <script src="./script.js"></script>
-</body>
