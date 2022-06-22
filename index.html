@@ -1,40 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Platform-Peruser</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Platform-Peruser</h1>
+        <p class="subtitle">
+          Search streaming services for your favorite movies!
+        </p>
+      </div>
+    </section>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+          <p class="title">Search Movies</p>
+          <form>
+            <input type="text" />
+          </form>
+          <button class="button">Search</button>
+          <button class="button">Platforms</button>
+          <button class="button">Reviewers</button>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-4 is-vertical">
+          <div class="tile is-child box">
+            <p class="title">Watchlist</p>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-8 is-parent">
+        <div class="tile is-child box">
+          <p class="title">Movie Title</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer></footer>
+</html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <title>Platform Peruser</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Platform Peruser</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h2>
-            </h2>
-            <nav>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div id="main-card">
-            <div>
-                movie art
-            </div>
-            <p>
-                movie title
-            </p>
-            <div>
-                platform icons
-            </div>
-            <div>
-                NYT review 
-            </div>
-        </div>
+  <header>
+    <div>
+      <h2></h2>
+      <nav></nav>
+    </div>
+  </header>
+  <main>
+    <div id="main-card">
+      <div>movie art</div>
+      <p>movie title</p>
+      <div>platform icons</div>
+      <div>NYT review</div>
+    </div>
+  </main>
 
-    </main>
-
-
-    <script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
