@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Platform-Peruser</title>
     <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" href="styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./script.js"></script>
@@ -19,13 +20,16 @@
               Search streaming services for your favorite movies!
             </p>
         </div>
-        <div class="column is-half">
+        <div class="column is-two-fifths">
             <p class="tertiary-color" id="question">question</p>
             <p id="answer-one">answer</p>
             <p id="answer-two">answer</p>
             <p id="answer-three">answer</p>
             <p id="answer-four">amswer</p>
-          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <p>High Score:</p>
+          <p id="high-score"></p>
         </div>
       </div>
     </section>
@@ -45,32 +49,39 @@
       <div class="tile is-8 is-parent">
         <div class="tile is-child card">
             <!--movie title-->
-          <p class="title search-title" id="movie-title">Movie Title</p>
+          <p class="title search-title">Search Results</p>
+          <p class="icon">
+            <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
+          </p>
+          <p class="icon">
+            <i class="fa-solid fa-arrow-down" id="arrow-down"></i>
+          </p>
         <div class="card-image">
-            <!--movie cover-->
-            <figure class="image is-64x64">
-                <!--send cover image-->
-                <image id="movie-cover" src=""></image>
-            </figure>
         </div>
-        <div class="card-content">
+        <div class="card-content columns">
             <!--all textual content related to movie search-->
-            <p id="movie-plot">plot</p>
-            <p id="movie-release">release date</p>
-            <p id="movie-genre">type</p>
-            <p id="movie-review">review</p>
-        </div>
-        <div class="card-footer">
-            <!--streaming platform icons-->
-            <div class="card-footer-item">
-                <figure class="image is-24x24">
-                    <image id="streaming-one"></image>
-                </figure> 
+            <div class="column is-one-quarter jumbotron">
+              <img id="movie-art" src="" width="128" height="128">
             </div>
-            <div class="card-footer-item">
-                <figure class="image is-24x24">
-                    <image id="streaming-two"></image>
-                </figure>
+            <div class="column jumbotron">
+              <p id="movie-title">Movie Title</p>
+            </div>
+            <div class="column jumbotron">
+              <p id="movie-rating">Movie Rating</p>
+            </div>
+        </div>
+        <div class="card-footer columns">
+            <div class="column is-one-quarter">
+              <a id="platform-one" href="">Platform</a>
+            </div>
+            <div class="column is-one-quarter">
+              <a id="platform-two" href="">Platform</a>
+            </div>
+            <div class="column is-one-quarter">
+              <a id="platform-three" href="">Platform</a>
+            </div>
+            <div class="column is-one-quarter">
+              <a id="platform-four" href="">Platform</a>
             </div>
         </div>
     
