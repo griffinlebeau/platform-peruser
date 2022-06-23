@@ -20,16 +20,18 @@
               Search streaming services for your favorite movies!
             </p>
         </div>
+        <div class="column">
+          <p>High Score:</p>
+          <p id="high-score"></p>
+          <p>Current Score:</p>
+          <p id="current-score"></p>
+        </div>
         <div class="column is-two-fifths">
             <p class="tertiary-color" id="question">question</p>
             <p id="answer-one">answer</p>
             <p id="answer-two">answer</p>
             <p id="answer-three">answer</p>
             <p id="answer-four">amswer</p>
-        </div>
-        <div class="column is-one-quarter">
-          <p>High Score:</p>
-          <p id="high-score"></p>
         </div>
       </div>
     </section>
@@ -50,15 +52,12 @@
         <div class="tile is-child card">
             <!--movie title-->
           <p class="title search-title">Search Results</p>
-          <p class="icon">
-            <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
-          </p>
-          <p class="icon">
-            <i class="fa-solid fa-arrow-down" id="arrow-down"></i>
-          </p>
-        <div class="card-image">
-        </div>
-        <div class="card-content columns">
+          <div class="columns is-centered">
+            <p class="icon">
+              <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
+            </p>
+          </div>
+          <div class="card-content columns">
             <!--all textual content related to movie search-->
             <div class="column is-one-quarter jumbotron">
               <img id="movie-art" src="" width="128" height="128">
@@ -69,38 +68,86 @@
             <div class="column jumbotron">
               <p id="movie-rating">Movie Rating</p>
             </div>
+            <div class="column">
+              <div>
+                <a id="platform-one" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-two" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-three" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-four" href="">Platform</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-content columns">
+            <!--all textual content related to movie search-->
+            <div class="column is-one-quarter jumbotron">
+              <img id="movie-art" src="" width="128" height="128">
+            </div>
+            <div class="column jumbotron">
+              <p id="movie-title">Movie Title</p>
+            </div>
+            <div class="column jumbotron">
+              <p id="movie-rating">Movie Rating</p>
+            </div>
+            <div class="column">
+              <div>
+                <a id="platform-one" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-two" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-three" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-four" href="">Platform</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-content columns">
+            <!--all textual content related to movie search-->
+            <div class="column is-one-quarter jumbotron">
+              <img id="movie-art" src="" width="128" height="128">
+            </div>
+            <div class="column jumbotron">
+              <p id="movie-title">Movie Title</p>
+            </div>
+            <div class="column jumbotron">
+              <p id="movie-rating">Movie Rating</p>
+            </div>
+            <div class="column">
+              <div>
+                <a id="platform-one" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-two" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-three" href="">Platform</a>
+              </div>
+              <div>
+                <a id="platform-four" href="">Platform</a>
+              </div>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <p class="icon">
+              <i class="fa-solid fa-arrow-down" id="arrow-down"></i>
+            </p>
+          </div>
         </div>
         <div class="card-footer columns">
-            <div class="column is-one-quarter">
-              <a id="platform-one" href="">Platform</a>
-            </div>
-            <div class="column is-one-quarter">
-              <a id="platform-two" href="">Platform</a>
-            </div>
-            <div class="column is-one-quarter">
-              <a id="platform-three" href="">Platform</a>
-            </div>
-            <div class="column is-one-quarter">
-              <a id="platform-four" href="">Platform</a>
-            </div>
         </div>
+        
     
     </div>
     </div>
     <div class="tile is-parent">
-        <div class="tile is-4 is-vertical">
-          <div class="tile is-child box">
-            <p class="title">Watchlist</p>
-            <div>
-                <figure class="image is-16x16">
-                    <image id="watchlist-cover"></image>
-                </figure>
-                <p id="watchlist-title">
-                    movie title
-                </p>
-            </div>
-          </div>
-        </div>
     </div>
   </body>
 
