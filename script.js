@@ -72,7 +72,7 @@ function partialmovie() { // get movies/shows that inclueds words
     var search = document.querySelector("#search-input").value
 
     myarr = [] // compare data.length (the number of pages you get) with count ( add one count for ever page got ) when data.length = count display()
-    $.get('https://api.watchmode.com/v1/autocomplete-search/?apiKey=pOOtsQfzXZEFa6VpRSdE8KcL5AAzkbpb1bq4pZktM&search_value=' + search + '&search_type=1', function(data) {
+    $.get('https://api.watchmode.com/v1/autocomplete-search/?apiKey=pOOtsQfzXZEFa6VpRSdE8KcL5AAzkbpb1bq4pZkt&search_value=' + search + '&search_type=1', function(data) {
         data = data["results"]
         console.log(data)
         for (let i = 0; i < data.length; i++) { // loop through results
